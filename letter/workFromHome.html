@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.71/pdfmake.min.js"></script>
+    <script type=”text/javascript” src=”http://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js”></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/letter.css">
+
+</head>
+
+<body>
+
+    <div id="input-window">
+
+        <h1 style="text-align: center; margin: 20px; ">Enter Details</h1>
+        <div class="container-fluid" id="input-form">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Your name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="name">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">sender's add. line 1</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="saddress1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Add line 2</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="saddress2">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="date">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">supervisor name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="superName">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">designation</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="designation">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">organisation</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="org">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">reciever add. line 1</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="raddress1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">reciever add. line 2</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="raddress2">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">subject</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="sub">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Reason</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="purpose">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">start and end date</span>
+                <input type="date" aria-label="First name" class="form-control" id="sdate">
+                <input type="date" aria-label="Last name" class="form-control" id="edate">
+            </div>
+
+
+
+
+
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">your designation</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="desig">
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="output-window">
+        <h1 style="text-align: center; margin:20px; color:white ;">Sample Output</h1>
+        <div id="sample-output">
+            <p> <span class="name-show"></span>
+                <br/><span id="saddress1-show"></span>
+                <br/><span id="saddress2-show"></span>
+                <br/><span id="date-show"></span>
+            </p>
+            <p><span id="superName-show"></span>
+                <br/><span id="designation-show"></span>
+                <br/><span id="org-show"></span>
+                <br/><span id="raddress1-show"></span>
+                <br/><span id="raddress2-show"></span>
+                <br/></p>
+            <p><span>subject : <span id="sub-show"></span></span>
+            </p>
+            Dear Sir/Ma'am
+            <p>This letter is a formal request to opt work from home <span id="purpose-show"></span>. I would like to request this from <span id="sdate-show"></span> to <span id="edate-show"></span>. Please let me know whether you require any further information
+                or have any questions.
+                <br/> Kindly consider my request.
+                <br/><span>Thanking you</span>
+                <br/><span class="name-show"></span>
+                <br/><span id="desig-show"></span>
+            </p>
+        </div>
+    </div>
+    <div class="button">
+
+        <button type="button" class="btn " id="save">Download</button>
+    </div>
+    <script src="javascript/workfromhome.js">
+    </script>
+
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

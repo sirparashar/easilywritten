@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script type=”text/javascript” src=”http://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js”></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/application.css">
+
+</head>
+
+<body>
+
+    <div id="input-window">
+
+        <h1 style="text-align: center; margin: 20px; ">Enter Details</h1>
+        <div class="container-fluid" id="input-form">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">School name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="school-name">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Address</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="address">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="date">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">No. of days</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="no">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">state relationship</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="relationship">
+            </div>
+
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">start and end date</span>
+                <input type="text" aria-label="First name" class="form-control" id="sdate">
+                <input type="text" aria-label="Last name" class="form-control" id="edate">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Your name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="name">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">class & sec</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="class">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Your Id</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="rollno">
+            </div>
+
+        </div>
+    </div>
+
+    <div id="output-window">
+        <h1 style="text-align: center; margin:20px; color:white ;">Sample Output</h1>
+        <div id="sample-output">
+
+            <p>To,<br />The Principal,<br/><span id="school-name-show"></span>,
+                <br /> <span id="address-show"></span>,
+                <br /> <span id="date-show"></span></p>
+            <p>Subject: Leave application to attend marrige function</p>
+            <p>Sir/Mam,</p>
+            <p>Most respectfully, I have to travel out of town for <span id="no-show"></span> of days for my <span id="relationship-show"></span> marrige.I would be travelling with my whole family, kindly grant me leave from <span id="sdate-show"></span>                to
+                <span id="edate-show"></span>. I shall be really grateful to you.</p>
+            <p>Thanking you,</p>
+            <p>Yours obediently,<br /><span id="name-show"></span>,<br /><span id="class-show"></span>,<br /> <span id="rollno-show"></span>.</p>
+        </div>
+    </div>
+    <div class="button">
+
+        <button type="button" class="btn " style="margin-left: 10px;" id="save">Download</button>
+    </div>
+    <script src="javascript/marrige.js">
+    </script>
+
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

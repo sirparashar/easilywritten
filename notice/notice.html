@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js" integrity="sha512-s/XK4vYVXTGeUSv4bRPOuxSDmDlTedEpMEcAQk0t/FMd9V6ft8iXdwSBxV0eD60c6w/tjotSlKu9J2AAW1ckTA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.71/pdfmake.min.js"></script>
+    <script type=”text/javascript” src=”http://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js”></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/notice.css">
+</head>
+
+<body>
+
+    <div id="input-window">
+
+        <h1 style="text-align: center; margin: 20px; ">Enter Details</h1>
+        <div class="container-fluid" id="input-form">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">School name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="school-name">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Address</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="address">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">date</span>
+                <input type="datetime-local" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="date">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default"> notice title</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="notice-title">
+            </div>
+
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">About notice</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="notice-body">
+            </div>
+
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Your name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="name">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">designation</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="designation">
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div id="output-window">
+        <h1 style="text-align: center; margin:20px; color:white ;">Sample Output</h1>
+        <div id="sample-output">
+            <div id="notice-content">
+
+                <h2 style="text-align: center;">NOTICE</h2>
+
+                <h3 style="text-align: center; "><span id="school-name-show"></span>,<span id="address-show"></span></h3>
+                <br/>
+                <br/>
+
+                <p style=" padding: 5px " id="date-show"></p>
+                <p><span>
+                    <h3 style="text-align: center;"id="notice-title-show"></h3>
+                    </span>
+                </p>
+                <p id="notice-body-show" style="word-wrap: break-word;
+                white-space: pre-wrap;
+                word-break: break-word;"></p>
+
+                <p id="name-show" style="padding:0%; margin:0%;"></p>
+                <p id="designation-show" style="padding:0%; margin:0%; font-size: 20px;"></p>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="button">
+
+        <button type="button" class="btn " style="margin-left: 10px;" id="save">Download</button>
+    </div>
+
+    <script src="javascript/notice.js"></script>
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

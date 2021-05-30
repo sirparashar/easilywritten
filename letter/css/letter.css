@@ -1,0 +1,60 @@
+ body {
+            margin: 0%;
+            padding: 0%;
+            overflow-y: scroll;
+        }
+        
+        #input-window {
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 40%;
+            position: relative;
+            font-size: 1vw;
+            float: left;
+            background-color: #FDF8F5;
+            height: fit-content;
+        }
+        
+        #output-window {
+            right: 0;
+            font-size: 1.1vw;
+            width: 60%;
+            height: fit-content;
+            float: right;
+            position: relative;
+            padding-right: 20px;
+            padding-left: 30px;
+            background-color: #4F4846;
+        }
+        
+        #input-form {
+            margin-top: 30px;
+        }
+        
+        #sample-output {
+            background-color: #F5F5F5;
+            padding-left: 20px;
+            overflow-y: scroll;
+            height: auto;
+        }
+        
+        .button {
+            justify-content: center;
+            display: inline-block;
+            width: 100%;
+            padding: 20px;
+            background-color: #4F4846;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .btn {
+            background-color: ivory;
+        }
+        
+        @media screen and (max-width: 600px) {
+            #input-window {
+                width: 100%;
+                height: auto;
+            }
+        }
